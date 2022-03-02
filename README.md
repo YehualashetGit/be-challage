@@ -13,3 +13,5 @@ yarn install
 ```
 yarn start
 ```
+
+## you can import the postment colletion from `collection.json` file

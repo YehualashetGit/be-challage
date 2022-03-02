@@ -3,10 +3,15 @@
  */
 
 import { Router } from "express";
-import Task from "src/routes/task";
-import Milestone from "src/routes/milestone";
+import { MilestoneService } from "src/services";
+import { TaskService } from "src/services/task.service";
+import { MilestoneRouter } from "./milestone";
+
+const taskService = new TaskService();
+const milestoneService = new MilestoneService(taskService);
+const milestoneRoute = new MilestoneRouter(milestoneService);
+
 const routes = Router();
 
-routes.use("/task", Task);
-routes.use("/milestone", Milestone);
+routes.use("/milestone", milestoneRoute.router);
 export default routes;

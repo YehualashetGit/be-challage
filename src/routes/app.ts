@@ -2,7 +2,7 @@
  * @format
  */
 import createError from "http-errors";
-import express from "express";
+import express, { NextFunction, Request, Response } from "express";
 import logger from "morgan";
 import cors from "cors";
 
@@ -26,7 +26,7 @@ if (!isProduction) {
 app.use("/api", routes);
 
 // catch 404 and forward to error handler
-app.use((req, res, next) => {
+app.use((req: Request, res: Response, next: NextFunction) => {
   next(createError(404));
 });
 

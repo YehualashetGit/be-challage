@@ -3,8 +3,8 @@
  */
 
 import { Router } from "express";
-import { MilestoneService } from "src/services";
-import { TaskService } from "src/services/task.service";
+import { MilestoneService } from "../services";
+import { TaskService } from "../services/task.service";
 import { MilestoneRouter } from "./milestone";
 
 const taskService = new TaskService();

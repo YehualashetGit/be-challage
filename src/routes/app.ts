@@ -6,7 +6,7 @@ import express from "express";
 import logger from "morgan";
 import cors from "cors";
 
-import routes from "src/routes";
+import routes from "./";
 const { NODE_ENV } = process.env;
 const isProduction = NODE_ENV === "production";
 

@@ -1,5 +1,5 @@
-import { Milestone } from "src/entities/Milestone";
-import { uuidGenerator } from "src/lib/uuidGenerator";
+import { Milestone } from "../entities/Milestone";
+import { uuidGenerator } from "../lib/uuidGenerator";
 
 export const data: Milestone[] = [
   {

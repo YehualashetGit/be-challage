@@ -5,8 +5,8 @@
 
 import "reflect-metadata";
 import http from "http";
-import app from "src/routes/app";
-import "src/lib/loadEnv";
+import app from "./routes/app";
+import "./lib/loadEnv";
 
 // Normalize a port into a number, string, or false.
 const { PORT } = process.env;

@@ -1,5 +1,5 @@
-import { Task } from "src/entities/Task";
-import { uuidGenerator } from "src/lib/uuidGenerator";
+import { Task } from "../entities/Task";
+import { uuidGenerator } from "../lib/uuidGenerator";
 
 export class TaskService {
   async create(task: Task): Promise<Task> {

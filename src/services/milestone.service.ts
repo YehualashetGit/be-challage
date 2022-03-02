@@ -1,6 +1,6 @@
-import { Milestone } from "src/entities/Milestone";
-import { Task } from "src/entities/Task";
-import { uuidGenerator } from "src/lib/uuidGenerator";
+import { Milestone } from "../entities/Milestone";
+import { Task } from "../entities/Task";
+import { uuidGenerator } from "../lib/uuidGenerator";
 import { data } from "../db/data";
 import { TaskService } from "./task.service";
 

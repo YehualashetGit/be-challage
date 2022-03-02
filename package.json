@@ -4,7 +4,7 @@
   "description": "backend template using typescript",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/index.ts",
+    "start": "node --loader ts-node/esm ./src/index.ts",
     "start:dev": "nodemon ./src/index.ts",
     "build": "webpack",
     "lint": "eslint src/ --fix",
